@@ -16,17 +16,12 @@ pip install newsapi-python nltk pandas numpy tqdm newsapi-python
 
 Siapkan API key dari [NewsAPI](https://newsapi.org/) kemudian lakukan scraping data:
 
-```q```: keyword berita yang ingin discrape
-
-```form_param```: berita sejak kapan (jika free user, hanya 30 hari kebelakang)
-
-```to```: berita hingga kapan
-
-```language```: bahasa berita
-
-```sort_by```: diurutkan berdasarkan
-
-```page_size```: ukuran maksimal per halaman
+- ```q```: keyword berita yang ingin discrape
+- ```form_param```: berita sejak kapan (jika free user, hanya 30 hari kebelakang)
+- ```to```: berita hingga kapan
+- ```language```: bahasa berita
+- ```sort_by```: diurutkan berdasarkan
+- ```page_size```: ukuran maksimal per halaman
 
 ```python
 from newsapi import NewsApiClient
@@ -53,12 +48,9 @@ df_cleaned = df_news['content'].astype(str).apply(processor.cleanse)
 
 Latih model Skip-Gram menggunakan data yang sudah dibersihkan:
 
-```window_size```: banyak kata yang dilibatkan dalam skipgram
-
-```embedding_dim```: banyak elemen vektor yang dikeluarkan
-
-```epochs```: banyak iterasi model
-
+- ```window_size```: banyak kata yang dilibatkan dalam skipgram
+- ```embedding_dim```: banyak elemen vektor yang dikeluarkan
+- ```epochs```: banyak iterasi model
 
 ```python
 from skipgram_trainer import SkipGramTrainer
