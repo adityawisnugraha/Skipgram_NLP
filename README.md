@@ -73,6 +73,8 @@ similarity = SentenceSimilarity.calculate_similarity(sentence1, sentence2, model
 print(f"Cosine similarity: {similarity:.2f}")
 ```
 
+Selanjutnya, juga dapat melakukan percobaan menggunakan ```uji_similarity.xlsx```
+
 ## Struktur Repository
 
 ```
