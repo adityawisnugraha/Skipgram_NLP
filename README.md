@@ -45,7 +45,7 @@ Latih model Skip-Gram menggunakan data yang sudah dibersihkan:
 from skipgram_trainer import SkipGramTrainer
 
 trainer = SkipGramTrainer(window_size=2, embedding_dim=20, epochs=100)
-model, word2idx, history_loss = trainer.train(df_cleaned.head(10))
+model, word2idx, history_loss = trainer.train(df_cleaned)
 ```
 
 ### Langkah 4: Menghitung Similaritas
