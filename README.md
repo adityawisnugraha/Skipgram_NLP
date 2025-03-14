@@ -92,3 +92,23 @@ skipgram-sentence-similarity/
 └── README.md
 ```
 
+## Hasil Eksperimen
+
+Eksperimen dilakukan dengan variasi parameter:
+
+- Window Size: 1, 2, 3
+- Embedding Dimension: 20, 50, 100
+
+Dari eksperimen didapatkan bahwa:
+
+- Window size yang lebih besar cenderung menghasilkan embedding yang menangkap hubungan kontekstual lebih baik tetapi memerlukan waktu lebih lama untuk dilatih.
+- Embedding dimension yang lebih tinggi memberikan representasi vektor yang lebih akurat tetapi membutuhkan lebih banyak resource komputasi.
+
+Hasil terbaik diperoleh pada kombinasi window size 2 dan embedding dimension 50, dengan keseimbangan antara performa komputasi dan kualitas representasi embedding yang optimal.
+
+## Kontribusi
+
+Jika ingin memberikan kontribusi, silakan fork repository ini dan kirimkan pull request.
+
+
+
