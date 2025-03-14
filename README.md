@@ -7,7 +7,7 @@ Proyek ini bertujuan untuk mengimplementasikan model Skip-Gram menggunakan Pytho
 Sebelum menjalankan kode, instal dependensi berikut:
 
 ```bash
-pip install newsapi-python nltk pandas numpy tqdm
+pip install newsapi-python nltk pandas numpy tqdm newsapi-python
 ```
 
 ## Cara Menggunakan
